@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.page{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 3.452fr 0.3fr;
+}
+
+.top-bar{
+    padding: 2em;
+    background-color:#B9B4C7 ;
+}
+
+.top-bar > h1{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Black Ops One' , cursive;
+
+}
+.add-book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+
+}
+.add-book > button {
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight:bold;
+    background-color: #352f44e0;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.book-cards{
+    padding: 2em;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+.card{
+    padding: 25px;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 7px #5C5470;
+    background-color: #FAF0E6;
+}
+.card > h3 {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 30px;
+    opacity: 50%;
+    cursor: default;
+}
+
+.footer{
+    padding: 20px;
+    background-color: #352F44;
+}
+
+.footer > h3{
+    color: white;
+}
