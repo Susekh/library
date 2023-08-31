@@ -12,6 +12,22 @@ html, body{
     width: 100%;
 }
 
+
+/* customizing the scroll bar */
+*::-webkit-scrollbar{
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track{
+    background: #FAF0E6;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #5C5470;
+    border-radius: 15px;
+}
+
+/*working on top bar*/
 .top-bar{
     padding: 2em;
     background-color:#B9B4C7 ;
@@ -25,6 +41,9 @@ html, body{
     font-family: 'Black Ops One' , cursive;
 
 }
+
+/*add book button and form part*/
+
 .add-book{
     display: flex;
     flex-direction: column;
@@ -46,6 +65,43 @@ html, body{
     margin-bottom: 3em;
 }
 
+
+
+#add-book-form{
+    border: 3px solid #5C5470;
+    padding: 40px;
+    gap: 1px;
+    border-radius: 15px;
+    background-color: #B9B4C7;
+}
+
+
+
+#add-book-form > label,input{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+
+}
+
+#add-book-form > input{
+    padding: 6px;
+    border-radius: 7px;
+}
+
+.submit-btn{
+    background-color: #352F44;
+    color: white;
+    margin: 0 auto 0 auto;
+    width: 60px;
+    border-style: none;
+    cursor: pointer;
+
+}
+
+
+
+/* cards of books part */
+
 .book-cards{
     padding: 2em;
     padding-left: 6em;
@@ -54,6 +110,7 @@ html, body{
     grid-template-columns: repeat(3,1fr);
     row-gap: 5em;
     column-gap: 2em;
+    margin-bottom: 5%;
 }
 
 .card{
@@ -96,7 +153,7 @@ html, body{
     margin-top: auto;
     height: 50px;
     padding: 10px;
-    background-color: #352F44;
+    background-color: #B9B4C7;
 }
 
 .footer > h3{
@@ -107,12 +164,5 @@ html, body{
 
 
 
-
-
-#add-book-form > label{
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-
-}
 
 

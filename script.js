@@ -36,6 +36,13 @@ function render(){
             <button onclick="removeBook(${i})">remove</button>
 
         `;
+        addForm.style.display= "none";
+        libraryCard.appendChild(bookCard);
+    }
+    if(myLibrary.length == 0){
+        let bookCard = document.createElement("div");
+        bookCard.setAttribute("class", "card");
+        bookCard.innerHTML = `<h3>Press on Add Book button to a add book</h3>`
         libraryCard.appendChild(bookCard);
     }
 }
@@ -55,19 +62,21 @@ function addBookToLibrary() {
 
 
 
-//add button//
+//add button
 let addBtn = document.querySelector(".add-book > button");
 let addForm = document.getElementById("add-book-form")
 addBtn.addEventListener("click", () => {
-    addForm.style.display = "block"
+    addForm.style.display = "grid"
 })
 
 
-//remove button//
+//remove button
 function removeBook(index){
     myLibrary.splice(index, 1);
     render();
 }
+
+//making submit button functional
 
 document.getElementById("add-book-form").addEventListener("submit", () => {
     event.preventDefault();
